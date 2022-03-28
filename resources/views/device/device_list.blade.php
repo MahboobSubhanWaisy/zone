@@ -19,7 +19,7 @@
         <div class="col-sm-12">
             <div class="panel panel-default card-view">
                 <div class="panel-heading">
-                    <h6 class="panel-title txt-dark zone-btn" style="cursor: pointer;">وسیله جدید</h6>
+                    <h6 class="panel-title txt-dark zone-btn" style="cursor: pointer;"> {{__('words.New Device')}}</h6>
                     
                 </div>
                 <div class="panel-wrapper collapse in zone-form">
@@ -29,15 +29,15 @@
                                 @csrf
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12 form-group">
-                                        <label class="control-label mb-10 text-left">نام وسیله</label>
+                                        <label class="control-label mb-10 text-left"> {{__('words.Device Name')}} </label>
                                         <input type="text" name="device_name[]" class="form-control" required>
                                     </div>
                                     <div id="input-container">
 
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-outline pull-right"><i class="fa fa-save"></i> ذخیره</button>
-                                <button type="button" class="btn btn-primary btn-sm" id="add-new-input-btn"><i class="zmdi zmdi-plus"></i>&nbsp;&nbsp;افزودن</button>
+                                <button type="submit" class="btn btn-primary btn-outline pull-right"><i class="fa fa-save"></i> {{__('words.Save')}}</button>
+                                <button type="button" class="btn btn-primary btn-sm" id="add-new-input-btn"><i class="zmdi zmdi-plus"></i>&nbsp;&nbsp;{{__('words.Add')}}</button>
                             </form>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
             <div class="panel panel-default card-view">
                 <div class="panel-heading">
                     <div class="pull-left">
-                        <h6 class="panel-title txt-dark">لست وسایل</h6>
+                        <h6 class="panel-title txt-dark">  {{__('words.Device List')}}</h6>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -62,9 +62,9 @@
                                 <table id="datable_1" class="table table-hover display pb-30" >
                                     <thead>
                                         <tr>
-                                            <th>شماره</th>
-                                            <th>نام وسیله</th>
-                                            <th>تغییرات</th>
+                                            <th> {{__('words.Number')}}</th>
+                                            <th> {{__('words.Device Name')}}</th>
+                                            <th> {{__('words.Changes')}}</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -92,20 +92,20 @@
             <div class="modal-content">
                 <div class="modal-header bg-dark">
                     <button type="button" class="close" style="color: #fff;" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h5 class="modal-title" style="color: #fff;">تغییرات</h5>
+                    <h5 class="modal-title" style="color: #fff;"> {{__('words.Changes')}}</h5>
                 </div>
                 <form id="device-form">
                     <div class="modal-body">
                         @csrf
                         <input type="hidden" name="data" id="data-id">
                         <div class="form-group">
-                            <label class="control-label mb-10 text-left">نام وسیله</label>
+                            <label class="control-label mb-10 text-left"> {{__('words.Device Name')}} </label>
                             <input type="text" name="device-name" id="name" class="form-control" required>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-success" id="device-changes">اجرا تغییرات</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+                        <button type="button" class="btn btn-success" id="device-changes"> {{__('words.Update')}}</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"> {{__('words.Close')}}</button>
                     </div>
                 </form>
             </div>

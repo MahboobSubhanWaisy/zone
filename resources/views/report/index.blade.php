@@ -49,7 +49,7 @@ $date=to_jalali(date('Y-m-d'));
         <div class="panel panel-default card-view">
             <div class="panel-heading">
                 <div style="display: flex; justify-content:space-between;">
-                    <h3 class="panel-title txt-dark">انتخاب گزینه برای مشاهد گزارش</h3>
+                    <h3 class="panel-title txt-dark">{{__('words.Select Feilds To Show Report')}}</h3>
                     <a class="btn btn-success btn-outline fa fa-print" onclick="window.print();"></a>
                 </div>
             </div>
@@ -61,9 +61,9 @@ $date=to_jalali(date('Y-m-d'));
                             <div class="row">
                                 @if(Auth::user()->role == 1)
                                     <div class="col-lg-3 col-md-3 col-12 form-group">
-                                        <label class="control-label mb-10">لست زون ها</label>
+                                        <label class="control-label mb-10">{{__('words.Zone List')}}</label>
                                         <select class="select2" name="zone">
-                                            <option disabled selected>زون را انتخاب کنید</option>
+                                            <option disabled selected>{{__('words.Select Zone')}}</option>
                                             @foreach ($zones as $zone)
                                                 <option value="{{ $zone->z_id }}">{{ $zone->z_name }}</option>
                                             @endforeach
@@ -72,9 +72,9 @@ $date=to_jalali(date('Y-m-d'));
                                 @endif
                                 @if(Auth::user()->role == 2)
                                     <div class="col-lg-3 col-md-3 col-12 form-group">
-                                        <label class="control-label mb-10">لست ساحه ها</label>
+                                        <label class="control-label mb-10">{{__('words.Branch List')}}</label>
                                         <select class="select2" name="branch">
-                                            <option disabled selected>ساحه را انتخاب کنید</option>
+                                            <option disabled selected>{{__('words.Select Branch')}}</option>
                                             @foreach ($branches as $branch)
                                                 <option value="{{ $branch->br_id }}">{{ $branch->br_name }}</option>
                                             @endforeach
@@ -82,15 +82,15 @@ $date=to_jalali(date('Y-m-d'));
                                     </div>
                                 @endif
                                 <div class="col-lg-3 col-md-3 col-12 form-group">
-                                    <label class="control-label mb-10 text-left">تاریخ شروع</label>
+                                    <label class="control-label mb-10 text-left">{{__('words.Start Date')}}</label>
                                     <input type="text" name="start_date" class="form-control pdp" id="start-date" value="{{$date}}" autocomplete="off">
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-12 form-group">
-                                    <label class="control-label mb-10 text-left">تاریخ ختم</label>
+                                    <label class="control-label mb-10 text-left">{{__('words.End Date')}}</label>
                                     <input type="text" name="end_date" class="form-control pdp" id="end-date" value="{{$date}}" autocomplete="off">
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-12 form-group mt-30">
-                                    <button type="button" class="btn btn-primary btn-outline" id="search-btn" style="width: 100%"><i class="fa fa-search"></i> جستجو</button>
+                                    <button type="button" class="btn btn-primary btn-outline" id="search-btn" style="width: 100%"><i class="fa fa-search"></i> {{__('words.Search')}}</button>
                                 </div>
                             </div>
                         </div>

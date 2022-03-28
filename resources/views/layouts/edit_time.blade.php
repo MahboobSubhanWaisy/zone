@@ -18,14 +18,14 @@
         <div class="modal-content">
             <div class="modal-header bg-dark">
                 <button type="button" class="close" style="color: #fff;" data-dismiss="modal" aria-hidden="true">×</button>
-                <h5 class="modal-title" style="color: #fff;">تغییرات در ساعت</h5>
+                <h5 class="modal-title" style="color: #fff;">{{__('words.Clock Changes')}}</h5>
             </div>
             <form id="update-time-modal">
                 <div class="modal-body">
                     @csrf
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12 form-group">
-                            <label class="control-label mb-10">ساعت</label>
+                            <label class="control-label mb-10">{{__('words.Hour')}}</label>
                             <select class="form-control select2" name="hour" required>
                                 <option disabled selected>ساعت را انتخاب کنید</option>
                                 @for ($i = 1; $i <= 9; $i++)
@@ -34,7 +34,7 @@
                             </select>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 form-group">
-                            <label class="control-label mb-10">دقیقه</label>
+                            <label class="control-label mb-10">{{__('words.Mainute')}}</label>
                             <select class="form-control select2" name="mins" required>
                                 <option disabled selected>دقیقه را انتخاب کنید</option>
                                 @for ($i = 1; $i <= 59; $i++)
@@ -43,7 +43,7 @@
                             </select>
                         </div>
                         <div class="col-lg-12 col-md-12 col-12 form-group">
-                            <label class="control-label mb-10">دقیقه اضافه</label>
+                            <label class="control-label mb-10">{{__('words.Extra Minute')}}</label>
                             <select class="form-control select2" name="second_chanse">
                                 <option disabled selected>دقیقه را انتخاب کنید</option>
                                 @for ($i = 1; $i <= 59; $i++)
@@ -52,7 +52,7 @@
                             </select>
                         </div>
                         <div class="col-lg-12 col-md-12 col-12 form-group">
-                            <label class="control-label mb-10">دقیقه تغییرات</label>
+                            <label class="control-label mb-10">{{__('words.Changes Time')}}</label>
                             <select class="form-control select2" name="update_time" required>
                                 <option disabled selected>دقیقه را انتخاب کنید</option>
                                 @for ($i = 1; $i <= 59; $i++)
@@ -63,8 +63,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" id="update-time-btn">اجرا تغییرات</button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+                    <button type="button" class="btn btn-success" id="update-time-btn">{{__('words.Update')}}</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">{{__('words.Close')}}</button>
                 </div>
             </form>
         </div>

@@ -19,7 +19,7 @@
         <div class="col-sm-12">
             <div class="panel panel-default card-view">
                 <div class="panel-heading">
-                    <h6 class="panel-title txt-dark zone-btn" style="cursor: pointer;">زون جدید</h6>
+                    <h6 class="panel-title txt-dark zone-btn" style="cursor: pointer;">{{__('words.New Zone')}}</h6>
                 </div>
                 <div class="panel-wrapper collapse in zone-form">
                     <div class="panel-body">
@@ -28,15 +28,15 @@
                                 @csrf
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12 form-group">
-                                        <label class="control-label mb-10 text-left">نام زون</label>
+                                        <label class="control-label mb-10 text-left">{{__('words.Zone Name')}}</label>
                                         <input type="text" name="zone-name" class="form-control" required>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-12 form-group">
-                                        <label class="control-label mb-10 text-left">موقعیت زون</label>
+                                        <label class="control-label mb-10 text-left">{{__('words.Zone Location')}}</label>
                                         <input type="text" name="zone-location" class="form-control" required>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-outline pull-right"><i class="fa fa-save"></i> ذخیره</button>
+                                <button type="submit" class="btn btn-primary btn-outline pull-right"><i class="fa fa-save"></i> {{__('words.Save')}}</button>
                             </form>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
             <div class="panel panel-default card-view">
                 <div class="panel-heading">
                     <div class="pull-left">
-                        <h6 class="panel-title txt-dark">لست زون ها</h6>
+                        <h6 class="panel-title txt-dark">{{__('words.Zone List')}}</h6>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -61,10 +61,10 @@
                                 <table id="datable_1" class="table table-hover display pb-30" >
                                     <thead>
                                         <tr>
-                                            <th>شماره</th>
-                                            <th>نام زون</th>
-                                            <th>موقعیت زون</th>
-                                            <th>تغییرات</th>
+                                            <th>{{__('words.Number')}}</th>
+                                            <th> {{__('words.Zone Name')}}</th>
+                                            <th> {{__('words.Zone Location')}}</th>
+                                            <th>{{__('words.Changes')}}</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -94,24 +94,24 @@
             <div class="modal-content">
                 <div class="modal-header bg-dark">
                     <button type="button" class="close" style="color: #fff;" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h5 class="modal-title" style="color: #fff;">تغییرات</h5>
+                    <h5 class="modal-title" style="color: #fff;">{{__('words.Changes')}}</h5>
                 </div>
                 <form id="zone-form">
                     <div class="modal-body">
                         @csrf
                         <input type="hidden" name="data" id="data-id">
                         <div class="form-group">
-                            <label class="control-label mb-10 text-left">نام زون</label>
+                            <label class="control-label mb-10 text-left"> {{__('words.Zone Name')}}</label>
                             <input type="text" name="zone-name" id="name" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label class="control-label mb-10 text-left">موقعیت زون</label>
+                            <label class="control-label mb-10 text-left"> {{__('words.Zone Location')}}</label>
                             <input type="text" name="zone-location" id="location" class="form-control" required>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-success" id="zone-changes">اجرا تغییرات</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+                        <button type="button" class="btn btn-success" id="zone-changes">{{__('words.Update')}} </button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">{{__('words.Close')}}</button>
                     </div>
                 </form>
             </div>

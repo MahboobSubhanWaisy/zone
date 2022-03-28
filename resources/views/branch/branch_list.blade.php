@@ -35,7 +35,7 @@
         <div class="col-sm-12">
             <div class="panel panel-default card-view">
                 <div class="panel-heading">
-                    <h6 class="panel-title txt-dark branch-btn" style="cursor: pointer;">ساحه جدید</h6>
+                    <h6 class="panel-title txt-dark branch-btn" style="cursor: pointer;"> {{__('words.New Branch')}}</h6>
                 </div>
                 <div class="panel-wrapper collapse in branch-form">
                     <div class="panel-body">
@@ -44,20 +44,20 @@
                                 @csrf
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12 form-group">
-                                        <label class="control-label mb-10 text-left">نام ساحه</label>
+                                        <label class="control-label mb-10 text-left">{{__('words.Branch Name')}}</label>
                                         <input type="text" name="side-name" class="form-control" required>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-12 form-group">
-                                        <label class="control-label mb-10">لست زون ها</label>
+                                        <label class="control-label mb-10">{{__('words.Zone List')}}</label>
                                         <select class="select2" name="zone-name" required>
-                                            <option disabled selected>زون را انتخاب کنید</option>
+                                            <option disabled selected> {{__('words.Select Zone')}}</option>
                                             @foreach ($zones as $zone)
                                                 <option value="{{$zone->z_id}}">{{$zone->z_name}}</option>
                                             @endforeach
                                         </select>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-12 mb-10" style="color: #000;">
-                                        <label for="">لست وسایل</label>
+                                        <label for="">  {{__('words.Device List')}}</label>
                                     </div>
                                     @foreach ($devices as $device)
                                         <div class="col-lg-3 col-md-3 col-12">
@@ -68,7 +68,7 @@
                                         </div>
                                     @endforeach
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-outline pull-right"><i class="fa fa-save"></i> ذخیره</button>
+                                <button type="submit" class="btn btn-primary btn-outline pull-right"><i class="fa fa-save"></i> {{__('words.Save')}}</button>
                             </form>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
             <div class="panel panel-default card-view">
                 <div class="panel-heading">
                     <div class="pull-left">
-                        <h6 class="panel-title txt-dark">لست ساحه ها</h6>
+                        <h6 class="panel-title txt-dark">  {{__('words.Branch List')}}</h6>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -93,10 +93,10 @@
                                 <table id="datable_1" class="table table-hover display pb-30" >
                                     <thead>
                                         <tr>
-                                            <th>شماره</th>
-                                            <th>نام ساحه</th>
-                                            <th>زون مربوط</th>
-                                            <th>تغییرات</th>
+                                            <th>{{__('words.Number')}}</th>
+                                            <th> {{__('words.Branch Name')}}</th>
+                                            <th> {{__('words.Zone Name')}}</th>
+                                            <th>{{__('words.Changes')}}</th>
                                         </tr>
                                     </thead>
                                     <tbody>

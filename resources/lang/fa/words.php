@@ -43,4 +43,11 @@ return [
     'Start Date' => 'شروع تاریخ',
     'End Date' => 'ختم تاریخ',
     'Search' => 'جستجو',
+    'New User' => 'کاربر جدید',
+    'Full Name' => 'نام و تخلص',
+    'Email' => 'ایمل',
+    'Password' => 'رمز هبور',
+    'Password Conf' => 'تایید رمز',
+    'Role List' => 'لست صلاحیت ها',
+    'Select Role' => 'صلاحیت را انتخاب کنید'
 ];

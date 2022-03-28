@@ -43,4 +43,11 @@ return [
     'Start Date' => 'Start Date',
     'End Date' => 'End Date',
     'Search' => 'Search',
+    'New User' => 'New User',
+    'Full Name' => 'Full Name',
+    'Email' => 'Email',
+    'Password' => 'Password',
+    'Password Conf' => 'Password Confirm',
+    'Role List' => 'Role List',
+    'Select Role' => 'Select Role'
 ];

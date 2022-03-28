@@ -54,7 +54,7 @@
         <div class="col-sm-12">
             <div class="panel panel-default card-view">
                 <div class="panel-heading">
-                    <h6 class="panel-title txt-dark user-btn" style="cursor: pointer;">کاربر جدید</h6>
+                    <h6 class="panel-title txt-dark user-btn" style="cursor: pointer;">{{__('words.New User')}}</h6>
                 </div>
                 <div class="panel-wrapper collapse in user-form">
                     <div class="panel-body">
@@ -63,7 +63,7 @@
                                 @csrf
                                 <div class="row" id="register-form">
                                     <div class="col-lg-4 col-md-4 col-12 form-group">
-                                        <label class="control-label mb-10 text-left">نام و تخلص</label>
+                                        <label class="control-label mb-10 text-left">{{__('words.Full Name')}}</label>
                                         <input id="name" type="text"
                                             class="form-control @error('name') is-invalid @enderror" name="name"
                                             value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -74,7 +74,7 @@
                                         @enderror
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-12 form-group">
-                                        <label class="control-label mb-10 text-left">ایمل</label>
+                                        <label class="control-label mb-10 text-left">{{__('words.Email')}}</label>
                                         <input id="email" type="email"
                                             class="form-control @error('email') is-invalid @enderror" name="email"
                                             value="{{ old('email') }}" required autocomplete="email">
@@ -85,7 +85,7 @@
                                         @enderror
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-12 form-group">
-                                        <label class="control-label mb-10 text-left">رمز عبور</label>
+                                        <label class="control-label mb-10 text-left">{{__('words.Password')}}</label>
                                         <input id="password" type="password"
                                             class="form-control @error('password') is-invalid @enderror" name="password"
                                             required autocomplete="new-password">
@@ -96,14 +96,14 @@
                                         @enderror
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-12 form-group">
-                                        <label class="control-label mb-10 text-left">تایید رمز</label>
+                                        <label class="control-label mb-10 text-left">{{__('words.Password Conf')}}</label>
                                         <input id="password-confirm" type="password" class="form-control"
                                             name="password_confirmation" required autocomplete="new-password">
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-12 form-group">
-                                        <label class="control-label mb-10">لست صلاحیت ها</label>
+                                        <label class="control-label mb-10">{{__('words.Role List')}}</label>
                                         <select class="select2" name="role" required id="role">
-                                            <option disabled selected>صلاحیت را انتخاب کنید</option>
+                                            <option disabled selected>{{__('words.Select Role')}}</option>
                                             @foreach ($roles as $role)
                                                 <option value="{{ $role->role_id }}">{{ $role->role_name }}</option>
                                             @endforeach
@@ -111,7 +111,7 @@
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-outline pull-right"><i
-                                        class="fa fa-save"></i> ذخیره</button>
+                                        class="fa fa-save"></i> {{__('words.Save')}}</button>
                             </form>
                         </div>
                     </div>

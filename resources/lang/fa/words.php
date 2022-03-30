@@ -43,7 +43,17 @@ return [
     'Start Date' => 'شروع تاریخ',
     'End Date' => 'ختم تاریخ',
     'Search' => 'جستجو',
+<<<<<<< HEAD
     'Next' => 'بعدی',
     'Previous' => 'قبلی',
     'No Data Exist' => 'دیتا موجود نیست ',
+=======
+    'New User' => 'کاربر جدید',
+    'Full Name' => 'نام و تخلص',
+    'Email' => 'ایمل',
+    'Password' => 'رمز هبور',
+    'Password Conf' => 'تایید رمز',
+    'Role List' => 'لست صلاحیت ها',
+    'Select Role' => 'صلاحیت را انتخاب کنید'
+>>>>>>> 60cf756df36f80ce97750c3ab394a0845d8f97b9
 ];

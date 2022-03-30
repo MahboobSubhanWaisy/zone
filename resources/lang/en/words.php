@@ -43,17 +43,7 @@ return [
     'Start Date' => 'Start Date',
     'End Date' => 'End Date',
     'Search' => 'Search',
-<<<<<<< HEAD
     'Next' => 'Next',
     'Previous' => 'Previous',
     'No Data Exist' => 'No Data Exist',
-=======
-    'New User' => 'New User',
-    'Full Name' => 'Full Name',
-    'Email' => 'Email',
-    'Password' => 'Password',
-    'Password Conf' => 'Password Confirm',
-    'Role List' => 'Role List',
-    'Select Role' => 'Select Role'
->>>>>>> 60cf756df36f80ce97750c3ab394a0845d8f97b9
 ];

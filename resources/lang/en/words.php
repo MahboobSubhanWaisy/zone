@@ -43,4 +43,7 @@ return [
     'Start Date' => 'Start Date',
     'End Date' => 'End Date',
     'Search' => 'Search',
+    'Next' => 'Next',
+    'Previous' => 'Previous',
+    'No Data Exist' => 'No Data Exist',
 ];

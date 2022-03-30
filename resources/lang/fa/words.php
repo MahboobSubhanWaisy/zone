@@ -43,4 +43,7 @@ return [
     'Start Date' => 'شروع تاریخ',
     'End Date' => 'ختم تاریخ',
     'Search' => 'جستجو',
+    'Next' => 'بعدی',
+    'Previous' => 'قبلی',
+    'No Data Exist' => 'دیتا موجود نیست ',
 ];

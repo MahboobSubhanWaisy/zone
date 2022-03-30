@@ -126,12 +126,12 @@
                 "aaSorting": [[0,"desc"]],
                 "info": true,
                 "language": {
-                    "sSearch": "جستجو",
+                    "sSearch": "{{__('words.Search')}}",
                     "paginate": {
-                        "previous": "قبلی",
-                        "next": "بعدی"
+                        "previous": "{{__('words.Previous')}}",
+                        "next": "{{__('words.Next')}}"
                     },
-                    "sEmptyTable": "دیتا موجود نیست"
+                    "sEmptyTable": "{{__('words.No Data Exist')}}"
                 }
             });
             

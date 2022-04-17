@@ -84,19 +84,19 @@
                                             <li>
                                                 <a href="{{route('english')}}" class="connection-item">
                                                     <img src="{{asset('public/asset/flags/british.png')}}" alt="" style="width: 2rem;">
-                                                    <span class="block">{{__('words.English')}}</span>
+                                                    <span class="block">English</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="{{route('dari')}}" class="connection-item">
                                                     <img src="{{asset('public/asset/flags/Afghanistan.jpg')}}" alt="" style="width: 2rem;">
-                                                    <span class="block">{{__('words.Dari')}}</span>
+                                                    <span class="block">دری</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="{{route('pashto')}}" class="connection-item">
                                                     <img src="{{asset('public/asset/flags/Afghanistan.jpg')}}" alt="" style="width: 2rem;">
-                                                    <span class="block">{{__('words.Pashto')}}</span>
+                                                    <span class="block">پشتو</span>
                                                 </a>
                                             </li>
                                         </ul>

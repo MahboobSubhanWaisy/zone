@@ -46,4 +46,15 @@ return [
     'Next' => 'Next',
     'Previous' => 'Previous',
     'No Data Exist' => 'No Data Exist',
+    'Full Name' => 'Full Name',
+    'Email' => 'Email',
+    'Password' => 'Password',
+    'Password Conf' => 'Password Confirm',
+    'Role List' => 'Role List',
+    'Select Role' => 'Select Role',
+    'New User' => 'New User',
+    'Role' => 'Role',
+    'User List' => 'User List',
+    'New Password' => 'New Password', 
+    'Old Password' => 'Old Password'
 ];

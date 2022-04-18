@@ -46,4 +46,15 @@ return [
     'Next' => 'بعدی',
     'Previous' => 'قبلی',
     'No Data Exist' => 'دیتا موجود نیست ',
+    'Full Name' => 'نام و تخلص',
+    'Email' => 'ایمل',
+    'Password' => 'رمز',
+    'Password Conf' => 'تایید رمز',
+    'Role List' => 'لست صلاحیت',
+    'Select Role' => 'انتخاب صلاحیت',
+    'New User' => 'کاربر جدید',
+    'Role' => 'صلاحیت',
+    'User List' => 'لست کاربران',
+    'New Password' => 'رمز چدید', 
+    'Old Password' => 'رمز گذشته'
 ];

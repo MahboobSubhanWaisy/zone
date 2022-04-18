@@ -125,7 +125,7 @@
             <div class="panel panel-default card-view">
                 <div class="panel-heading">
                     <div class="pull-left">
-                        <h6 class="panel-title txt-dark">لست کاربران</h6>
+                        <h6 class="panel-title txt-dark">{{__('words.User List')}}</h6>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -136,13 +136,13 @@
                                 <table id="datable_1" class="table table-hover display pb-30">
                                     <thead>
                                         <tr>
-                                            <th>شماره</th>
-                                            <th>نام و تخلص</th>
-                                            <th>ایمل آدرس</th>
-                                            <th>صلاحیت</th>
-                                            <th>زون</th>
-                                            <th>ساحه</th>
-                                            <th>تغییرات</th>
+                                            <th>{{__('words.Number')}}</th>
+                                            <th>{{__('words.Full Name')}}</th>
+                                            <th>{{__('words.Email')}}</th>
+                                            <th>{{__('words.Role')}}</th>
+                                            <th>{{__('words.Zone')}}</th>
+                                            <th>{{__('words.Branch')}}</th>
+                                            <th>{{__('words.Changes')}}</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -156,7 +156,6 @@
                                                 <td>@if ($user->branches != ''){{ $user->branches->br_name }}@else ---------- @endif</td>
                                                 <td>
                                                     <a href="#!" class="edit-btn glyphicon glyphicon-edit user-edit-btn" data="{{$user->id}}"></a>
-                                                    <a href="#!" class="remove-btn glyphicon glyphicon-trash"></a>
                                                 </td>
                                             </tr>
                                         @endforeach

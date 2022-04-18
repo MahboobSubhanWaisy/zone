@@ -57,7 +57,7 @@ return [
     'User List' => 'User List',
     'New Password' => 'New Password', 
     'Old Password' => 'Old Password',
-    'Care maintenance management system'=>'Care maintenance management system',
+    'Care maintenance management system'=>'Maintenance MIS',
     'Login Page' => 'Login Page',
     'Login' =>'Login',
     'Password' => 'Password',

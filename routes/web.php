@@ -21,11 +21,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes();
 
-Route::get('/english','webDataController@english')->name('english');
-Route::get('/dari','webDataController@dari')->name('dari');
-Route::get('/pashto','webDataController@pashto')->name('pashto');
+Route::get('/english', 'webDataController@english')->name('english');
+Route::get('/dari', 'webDataController@dari')->name('dari');
+Route::get('/pashto', 'webDataController@pashto')->name('pashto');
+Route::middleware(['localize'])->group(function () {
+    Auth::routes();
+});
 
 Route::middleware(['auth', 'localize'])->group(function () {
 

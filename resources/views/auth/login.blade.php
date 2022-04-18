@@ -19,8 +19,8 @@
 		<link href="{{asset('public/asset/dist/css/style.css')}}" rel="stylesheet" type="text/css">
 
         <style>
-            
-        </style>
+     
+    </style>
 	</head>
 	<body>
 		<!--Preloader-->
@@ -37,16 +37,59 @@
 						<div class="table-cell vertical-align-middle auth-form-wrap">
 							<div class="auth-form  ml-auto mr-auto no-float">
 								<div class="row">
+									<li class="dropdown app-drp">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i
+												class="zmdi zmdi-apps top-nav-icon"></i></a>
+										<ul class="dropdown-menu app-dropdown" data-dropdown-in="slideInRight"
+											data-dropdown-out="flipOutX">
+											<li>
+												<div class="slimScrollDiv"
+													style="position: relative; overflow: hidden; width: auto; height: 85px;">
+													<div class="app-nicescroll-bar"
+														style="overflow: hidden; width: auto; height: 162px;">
+														<ul class="app-icon-wrap pa-10">
+															<li>
+																<a href="{{route('english')}}" class="connection-item">
+																	<img src="{{asset('public/asset/flags/british.png')}}" alt="" style="width: 2rem;">
+																	<span class="block">English</span>
+																</a>
+															</li>
+															<li>
+																<a href="{{route('dari')}}" class="connection-item">
+																	<img src="{{asset('public/asset/flags/Afghanistan.jpg')}}" alt="" style="width: 2rem;">
+																	<span class="block">دری</span>
+																</a>
+															</li>
+															<li>
+																<a href="{{route('pashto')}}" class="connection-item">
+																	<img src="{{asset('public/asset/flags/Afghanistan.jpg')}}" alt="" style="width: 2rem;">
+																	<span class="block">پشتو</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+													<div class="slimScrollBar"
+														style="background: rgb(135, 135, 135); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 0px; z-index: 99; right: 1px; height: 162px;">
+													</div>
+													<div class="slimScrollRail"
+														style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+													</div>
+												</div>
+											</li>
+										</ul>
+									</li>
 									<div class="col-sm-12 col-xs-12">
 										<div class="mb-30">
-											<h3 class="text-center txt-dark mb-10">سیستم مدیریتی حفظ مراقبت</h3>
-											<h5 class="text-center nonecase-font txt-grey">صفحه ورود به سیستم</h5>
-										</div>	
+											<h3 class="text-center txt-dark mb-10">{{__('words.Care maintenance management system')}}</h3>
+											<h5 class="text-center nonecase-font txt-grey">{{__('words.Login Page')}}</h5>
+										</div>
+									
+						
 										<div class="form-wrap">
 											<form method="POST" action="{{ route('login') }}">
                                                 @csrf
 												<div class="form-group">
-													<label class="control-label mb-10" for="exampleInputEmail_2">ایمل آدرس</label>
+													<label class="control-label mb-10" for="exampleInputEmail_2">{{__('words.Email Address')}}</label>
 													<input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                                     @error('email')
                                                         <span class="invalid-feedback" role="alert">
@@ -55,7 +98,7 @@
                                                     @enderror
 												</div>
 												<div class="form-group">
-													<label class="pull-left control-label mb-10" for="exampleInputpwd_2">رمز عبور</label>
+													<label class="pull-left control-label mb-10" for="exampleInputpwd_2">{{__('words.Password')}}</label>
 													<div class="clearfix"></div>
 													<input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                                                     @error('password')
@@ -65,7 +108,7 @@
                                                     @enderror
 												</div>
 												<div class="form-group text-center">
-													<button type="submit" class="btn btn-info btn-success btn-rounded mt-20" style="padding: 0.7rem 8rem;">ورود</button>
+													<button type="submit" class="btn btn-info btn-success btn-rounded mt-20" style="padding: 0.7rem 8rem;">{{__('words.Login')}}</button>
 												</div>
 											</form>
 										</div>

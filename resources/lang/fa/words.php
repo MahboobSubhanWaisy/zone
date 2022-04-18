@@ -56,5 +56,10 @@ return [
     'Role' => 'صلاحیت',
     'User List' => 'لست کاربران',
     'New Password' => 'رمز چدید', 
-    'Old Password' => 'رمز گذشته'
+    'Old Password' => 'رمز گذشته',
+    'Care maintenance management system' =>'سیستم مدیریتی حفظ مراقبت',
+    'Login Page' => 'صفحه ورود به سیستم',
+    'Login' =>'ورود',
+    'Password' => 'رمز',
+    'Email Address' => 'ایمل آدرس',
 ];

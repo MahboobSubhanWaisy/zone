@@ -46,4 +46,9 @@ return [
     'Next' => 'بل',
     'Previous' => 'تیر',
     'No Data Exist' => 'هیڅ معلومات شتون نلري',
+    'Care maintenance management system' =>'د حفظ مراقبت سیستم',
+    'Login Page' => 'صفحه ورود به سیستم',
+    'Login' =>'ورود',
+    'Password' => 'رمز',
+    'Email Address' => 'ایمل آدرس',
 ];

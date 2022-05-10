@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Maintenance Department</title>
     <meta name="description" content="Philbert is a داشبورد & Admin Site Responsive Template by hencework." />
-    <meta name="keywords"
-        content="admin, admin dashboard, admin template, cms, crm, Philbert Admin, Philbertadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
+    <meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Philbert Admin, Philbertadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
     <meta name="author" content="hencework" />
 
     <!-- Favicon -->
@@ -15,21 +14,16 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Morris Charts CSS -->
-    <link href="{{ asset('public/asset/vendors/bower_components/morris.js/morris.css') }}" rel="stylesheet"
-        type="text/css" />
+    <link href="{{ asset('public/asset/vendors/bower_components/morris.js/morris.css') }}" rel="stylesheet" type="text/css" />
 
     <!-- Data table CSS -->
-    <link href="{{ asset('public/asset/vendors/bower_components/datatables/media/css/jquery.dataTables.min.css') }}"
-        rel="stylesheet" type="text/css" />
+    <link href="{{ asset('public/asset/vendors/bower_components/datatables/media/css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css" />
 
     {{-- <link href="{{asset('public/asset/vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css')}}" rel="stylesheet" type="text/css"> --}}
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
 
-    <link rel="stylesheet"
-        href="{{ asset('public/asset/vendors/bower_components/select2/dist/css/select2.min.css') }}">
-    <link rel="stylesheet"
-        href="{{ asset('public/asset/vendors/bower_components/sweetalert/dist/sweetalert2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/asset/vendors/bower_components/select2/dist/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/asset/vendors/bower_components/sweetalert/dist/sweetalert2.min.css') }}">
     <!-- Custom CSS -->
     <link href="{{ asset('public/asset/dist/css/style.css') }}" rel="stylesheet" type="text/css">
 
@@ -54,58 +48,48 @@
                 <div class="nav-header pull-left">
                     <div class="logo-wrap">
                         <a href="index-2.html">
-                            <img class="brand-img ml-45" src="{{ asset('public/asset/dist/img/emirate.png') }}"
-                                alt="brand" style="width: 5.5rem;" />
+                            <img class="brand-img ml-45" src="{{ asset('public/asset/dist/img/emirate.png') }}" alt="brand" style="width: 5.5rem;" />
                         </a>
                     </div>
                 </div>
-                <a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block ml-20 pull-left"
-                    href="javascript:void(0);"><i class="zmdi zmdi-menu"></i></a>
-                <a id="toggle_mobile_search" data-toggle="collapse" data-target="#search_form" class="mobile-only-view"
-                    href="javascript:void(0);"><i class="zmdi zmdi-search"></i></a>
-                <a id="toggle_mobile_nav" class="mobile-only-view" href="javascript:void(0);"><i
-                        class="zmdi zmdi-more"></i></a>
+                <a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block ml-20 pull-left" href="javascript:void(0);"><i class="zmdi zmdi-menu"></i></a>
+                <a id="toggle_mobile_search" data-toggle="collapse" data-target="#search_form" class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-search"></i></a>
+                <a id="toggle_mobile_nav" class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-more"></i></a>
             </div>
             <div id="mobile_only_nav" class="mobile-only-nav pull-right">
                 <ul class="nav navbar-right top-nav pull-right">
 
 
                     <li class="dropdown app-drp">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i
-                                class="zmdi zmdi-apps top-nav-icon"></i></a>
-                        <ul class="dropdown-menu app-dropdown" data-dropdown-in="slideInRight"
-                            data-dropdown-out="flipOutX">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="zmdi zmdi-apps top-nav-icon"></i></a>
+                        <ul class="dropdown-menu app-dropdown" data-dropdown-in="slideInRight" data-dropdown-out="flipOutX">
                             <li>
-                                <div class="slimScrollDiv"
-                                    style="position: relative; overflow: hidden; width: auto; height: 85px;">
-                                    <div class="app-nicescroll-bar"
-                                        style="overflow: hidden; width: auto; height: 162px;">
+                                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 85px;">
+                                    <div class="app-nicescroll-bar" style="overflow: hidden; width: auto; height: 162px;">
                                         <ul class="app-icon-wrap pa-10">
                                             <li>
-                                                <a href="{{route('english')}}" class="connection-item">
-                                                    <img src="{{asset('public/asset/flags/british.png')}}" alt="" style="width: 2rem;">
+                                                <a href="{{ route('english') }}" class="connection-item">
+                                                    <img src="{{ asset('public/asset/flags/british.png') }}" alt="" style="width: 2rem;">
                                                     <span class="block">English</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{route('dari')}}" class="connection-item">
-                                                    <img src="{{asset('public/asset/flags/Afghanistan.jpg')}}" alt="" style="width: 2rem;">
+                                                <a href="{{ route('dari') }}" class="connection-item">
+                                                    <img src="{{ asset('public/asset/flags/Afghanistan.jpg') }}" alt="" style="width: 2rem;">
                                                     <span class="block">دری</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{route('pashto')}}" class="connection-item">
-                                                    <img src="{{asset('public/asset/flags/Afghanistan.jpg')}}" alt="" style="width: 2rem;">
+                                                <a href="{{ route('pashto') }}" class="connection-item">
+                                                    <img src="{{ asset('public/asset/flags/Afghanistan.jpg') }}" alt="" style="width: 2rem;">
                                                     <span class="block">پشتو</span>
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="slimScrollBar"
-                                        style="background: rgb(135, 135, 135); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 0px; z-index: 99; right: 1px; height: 162px;">
+                                    <div class="slimScrollBar" style="background: rgb(135, 135, 135); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 0px; z-index: 99; right: 1px; height: 162px;">
                                     </div>
-                                    <div class="slimScrollRail"
-                                        style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+                                    <div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
                                     </div>
                                 </div>
                             </li>
@@ -117,8 +101,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="zmdi zmdi-notifications top-nav-icon"><span class="top-nav-icon-badge"></span></i>
                         </a>
-                        <ul class="dropdown-menu alert-dropdown" data-dropdown-in="bounceIn"
-                            data-dropdown-out="bounceOut">
+                        <ul class="dropdown-menu alert-dropdown" data-dropdown-in="bounceIn" data-dropdown-out="bounceOut">
                             <li>
                                 <div class="notification-box-head-wrap">
                                     <span class="notification-box-head pull-left inline-block">{{ __('words.Notifications') }}</span>
@@ -133,11 +116,9 @@
                     </li>
                     <li class="dropdown auth-drp">
                         <a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown">
-                            <img src="{{ asset('public/asset/dist/img/user_default.jpg') }}" alt="user_auth"
-                                class="user-auth-img img-circle" /><span class="user-online-status"></span>
+                            <img src="{{ asset('public/asset/dist/img/user_default.jpg') }}" alt="user_auth" class="user-auth-img img-circle" /><span class="user-online-status"></span>
                         </a>
-                        <ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX"
-                            data-dropdown-out="flipOutX">
+                        <ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
                             <li>
                                 <a href="{{ route('change-password') }}"><i class="zmdi zmdi-lock"></i><span>{{ __('words.Change Password') }}</span></a>
                             </li>
@@ -148,8 +129,7 @@
                                     <i class="zmdi zmdi-power"></i><span>{{ __('words.Logout') }}</span>
                                 </a>
 
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                    class="d-none">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf
                                 </form>
                             </li>
@@ -169,8 +149,7 @@
                 </li>
                 <li>
                     <a class="{{ Request::is('/') ? 'active' : '' }}" href="{{ route('dashboard') }}">
-                        <div class="pull-left"><i class="zmdi zmdi-landscape mr-20"></i><span
-                                class="right-nav-text">{{ __('words.Home') }}</span></div>
+                        <div class="pull-left"><i class="zmdi zmdi-landscape mr-20"></i><span class="right-nav-text">{{ __('words.Home') }}</span></div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
                     </a>
@@ -181,34 +160,32 @@
                 @if (Auth::user()->role == 1)
                     <li>
                         <a class="{{ Request::is('zone-list') ? 'active' : '' }}" href="{{ route('zone.list') }}">
-                            <div class="pull-left"><i class="zmdi zmdi-globe-alt mr-20"></i><span
-                                    class="right-nav-text">{{ __('words.Zone') }}</span></div>
+                            <div class="pull-left"><i class="zmdi zmdi-globe-alt mr-20"></i><span class="right-nav-text">{{ __('words.Zone') }}</span></div>
+                            <div class="pull-right"></div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                @endif
+                @if (Auth::user()->role == 2 || Auth::user()->role == 1)
+                    <li>
+                        <a class="{{ Request::is('branch-list') ? 'active' : '' }}" href="{{ route('branch.list') }}">
+                            <div class="pull-left"><i class="zmdi zmdi-flag mr-20"></i><span class="right-nav-text">{{ __('words.Branch') }}</span></div>
                             <div class="pull-right"></div>
                             <div class="clearfix"></div>
                         </a>
                     </li>
                     <li>
-                        <a class="{{ Request::is('branch-list') ? 'active' : '' }}"
-                            href="{{ route('branch.list') }}">
-                            <div class="pull-left"><i class="zmdi zmdi-flag mr-20"></i><span
-                                    class="right-nav-text">{{ __('words.Branch') }}</span></div>
+                        <a class="{{ Request::is('device-list') ? 'active' : '' }}" href="{{ route('device.list') }}">
+                            <div class="pull-left"><i class="zmdi zmdi-settings mr-20"></i><span class="right-nav-text">{{ __('words.Device') }}</span></div>
                             <div class="pull-right"></div>
                             <div class="clearfix"></div>
                         </a>
                     </li>
-                    <li>
-                        <a class="{{ Request::is('device-list') ? 'active' : '' }}"
-                            href="{{ route('device.list') }}">
-                            <div class="pull-left"><i class="zmdi zmdi-settings mr-20"></i><span
-                                    class="right-nav-text">{{ __('words.Device') }}</span></div>
-                            <div class="pull-right"></div>
-                            <div class="clearfix"></div>
-                        </a>
-                    </li>
+                @endif
+                @if (Auth::user()->role == 1)
                     <li>
                         <a href="#!" id="edit-time-btn">
-                            <div class="pull-left"><i class="zmdi zmdi-time mr-20"></i><span
-                                    class="right-nav-text">{{ __('words.Clock Settings') }}</span></div>
+                            <div class="pull-left"><i class="zmdi zmdi-time mr-20"></i><span class="right-nav-text">{{ __('words.Clock Settings') }}</span></div>
                             <div class="pull-right"></div>
                             <div class="clearfix"></div>
                         </a>
@@ -220,8 +197,7 @@
                 @if (Auth::user()->role == 2 || Auth::user()->role == 1)
                     <li>
                         <a class="{{ Request::is('report') ? 'active' : '' }}" href="{{ route('report') }}">
-                            <div class="pull-left"><i class="fa fa-list mr-20"></i><span
-                                    class="right-nav-text">{{ __('words.Reports') }}</span></div>
+                            <div class="pull-left"><i class="fa fa-list mr-20"></i><span class="right-nav-text">{{ __('words.Reports') }}</span></div>
                             <div class="pull-right"></div>
                             <div class="clearfix"></div>
                         </a>
@@ -231,8 +207,7 @@
                     </li>
                     <li>
                         <a class="{{ Request::is('register') ? 'active' : '' }}" href="{{ route('register') }}">
-                            <div class="pull-left"><i class="fa fa-users mr-20"></i><span
-                                    class="right-nav-text">{{ __('words.User') }}</span></div>
+                            <div class="pull-left"><i class="fa fa-users mr-20"></i><span class="right-nav-text">{{ __('words.User') }}</span></div>
                             <div class="pull-right"></div>
                             <div class="clearfix"></div>
                         </a>
@@ -240,10 +215,8 @@
                 @endif
                 @if (Auth::user()->role == 3)
                     <li>
-                        <a class="{{ Request::is('operator') || Request::is('operator-edit-report') || Request::is('operator-form')? 'active': '' }}"
-                            href="{{ route('operator') }}">
-                            <div class="pull-left"><i class="fa fa-list mr-20"></i><span
-                                    class="right-nav-text">{{ __('words.Rport') }}</span></div>
+                        <a class="{{ Request::is('operator') || Request::is('operator-edit-report') || Request::is('operator-form') ? 'active' : '' }}" href="{{ route('operator') }}">
+                            <div class="pull-left"><i class="fa fa-list mr-20"></i><span class="right-nav-text">{{ __('words.Report') }}</span></div>
                             <div class="pull-right"></div>
                             <div class="clearfix"></div>
                         </a>
@@ -280,8 +253,7 @@
     <script src="{{ asset('public/asset/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
     <!-- Data table JavaScript -->
-    <script src="{{ asset('public/asset/vendors/bower_components/datatables/media/js/jquery.dataTables.min.js') }}">
-    </script>
+    <script src="{{ asset('public/asset/vendors/bower_components/datatables/media/js/jquery.dataTables.min.js') }}"></script>
 
     <!-- Slimscroll JavaScript -->
     <script src="{{ asset('public/asset/dist/js/jquery.slimscroll.js') }}"></script>
